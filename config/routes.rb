@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root "home#index"
 
   # Get all notes
-  resources :notes, only: :index
+  resources :notes, only: [:index, :show, :create, :update, :delete]
 end
